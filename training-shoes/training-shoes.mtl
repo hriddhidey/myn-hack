@@ -1,0 +1,77 @@
+# Max2Mtl Version 4.0 Mar 10th, 2001
+#
+# Multi/Sub Material__35 (4) to come 
+#
+newmtl Default
+Ka  0.0 0.0 0.0
+Kd  0.2 0.2 0.2
+Ks  0.0 0.0 0.1
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl Shoes_sole
+Ka  0.0 0.0 0.0
+Kd  0.4 0.4 0.4
+Ks  0.1 0.1 0.1
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl metal
+Ka  0.0 0.0 0.0
+Kd  0.3 0.4 0.4
+Ks  0.1 0.1 0.2
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl Shoes
+Ka  0.0 0.0 0.0
+Kd  0.8 0.8 0.8
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  10.0
+illum 2
+map_Kd Tshoe04_C.jpg
+#
+# Multi/Sub Material__35 done 
+#
+# Multi/Sub Material__46 (4) to come 
+#
+newmtl Default
+Ka  0.0 0.0 0.0
+Kd  0.2 0.2 0.2
+Ks  0.0 0.0 0.1
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl Shoes_sole
+Ka  0.0 0.0 0.0
+Kd  0.4 0.4 0.4
+Ks  0.1 0.1 0.1
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl metal
+Ka  0.0 0.0 0.0
+Kd  0.3 0.4 0.4
+Ks  0.1 0.1 0.2
+d  1.0
+Ns  10.0
+illum 2
+#
+newmtl Shoes
+Ka  0.0 0.0 0.0
+Kd  0.8 0.8 0.8
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  10.0
+illum 2
+map_Kd Tshoe04_C.jpg
+#
+# Multi/Sub Material__46 done 
+#
+# EOF
