@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <meta charset="utf-8">
     <title>VanyR</title>
     <meta name="description" content="A VR approach to product demos.">
+    <link rel="stylesheet" href="style.css">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
   <body>
+      <script>
+        setTimeout(function(){
+          var loader = document.getElementById('loader');
+          loader.style.visibility="hidden"
+        },2000);
+      </script>
 
-    <!-- 
-      ______Basic aframe code below_______
-      <a-scene>
-        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-        <a-sky color="#ECECEC"></a-sky>
-      </a-scene>
-      ____________________________________
-      -->
-      <!--<div style="width:50%">-->
+    <div id="loader"></div>
     <a-scene>
-      <a-assets>
+      
+      <a-assets> 
         <a-asset-item id="training-shoes-obj" src="./training-shoes/training-shoes.obj"></a-asset-item>
         <a-asset-item id="training-shoes-mtl" src="./training-shoes/training-shoes.mtl"></a-asset-item>
       </a-assets>
-      <!-- Using the asset management system. -->
-      <a-obj-model src="#training-shoes-obj" mtl="#training-shoes-mtl" position="0 1.2 -0.7"></a-obj-model>
+
+      <a-text value="Training Shoes" color="#CCC"
+        position="-1 1 -1.8" scale="1.5 1.5 1.5"></a-text>
+      <a-obj-model src="#training-shoes-obj" mtl="#training-shoes-mtl" scale="2 2 2" position="0 2.2 0" > 
+        <a-animation attribute="rotation"
+               dur="20000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+        <a-animation attribute="position"
+               dur="20000"
+               fill="forwards"
+               from="0 0.3 -2"
+               to="0 0.3 -2"
+               repeat="indefinite"></a-animation>
+      </a-obj-model>
+      <a-entity camera="userHeight: 1" look-controls>
+          <a-entity cursor="fuse: true; fuseTimeout: 500"
+            position="0 0 -0.5"
+            geometry="primitive: ring; radiusInner: 0.005; radiusOuter: 0.01"
+            material="color: cyan; shader: flat">
+            </a-entity>
+      </a-entity>
       <a-sky color="#eee"></a-sky>
-      <!-- Defining the URL inline. Not recommended but may be more comfortable. -->
-      <!--<a-obj-model src="glasses.obj" mtl="glasses.mtl" scale="0.1 0.1 0.1"></a-obj-model>-->
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="3" position="2 4 4"></a-light>
+
     </a-scene>
-      <!--</div>-->
+
   </body>
 </html>
