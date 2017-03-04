@@ -5,19 +5,19 @@
     <meta charset="utf-8">
     <title>VanyR</title>
     <meta name="description" content="A VR approach to product demos.">
-    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style.css">-->
     <meta name="theme-color" content="#00bcd4" />
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
   <body>
-      <script>
+      <!--<script>
         setTimeout(function(){
           var loader = document.getElementById('loader');
           loader.style.visibility="hidden"
         },2000);
-      </script>
+      </script>-->
 
-    <div id="loader"></div>
+    <!--<div id="loader"></div>-->
     <a-scene>
       
       <a-assets> 
@@ -40,16 +40,16 @@
                to="0 0.3 -2"
                repeat="indefinite"></a-animation>
       </a-obj-model>
-      <a-entity camera="userHeight: 1" look-controls>
+      <!--<a-entity camera="userHeight: 1" look-controls>
           <a-entity cursor="fuse: true; fuseTimeout: 500"
             position="0 0 -0.5"
             geometry="primitive: ring; radiusInner: 0.005; radiusOuter: 0.01"
             material="color: cyan; shader: flat">
             </a-entity>
       </a-entity>
-      <a-sky color="#eee"></a-sky>
       <a-light type="ambient" color="#445451"></a-light>
-      <a-light type="point" intensity="3" position="2 4 4"></a-light>
+      <a-light type="point" intensity="3" position="2 4 4"></a-light>-->
+      <a-sky color="#eee"></a-sky>
 
     </a-scene>
 
