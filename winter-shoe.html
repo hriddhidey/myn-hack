@@ -10,7 +10,7 @@
   </head>
   <body>
 
-    <div id="loading"></div>
+    <!--<div id="loading"></div>-->
     <a-scene>
       <a-assets>
         <a-asset-item id="winter-shoe-obj" src="./winter-shoe/winter-shoe.obj"></a-asset-item>
@@ -32,7 +32,7 @@
                to="0 0.3 -2"
                repeat="indefinite"></a-animation>
       </a-obj-model>
-      <a-entity camera="userHeight: 1" look-controls>
+      <!--<a-entity camera="userHeight: 1" look-controls>
           <a-entity cursor="fuse: true; fuseTimeout: 500"
             position="0 0 -0.5"
             geometry="primitive: ring; radiusInner: 0.005; radiusOuter: 0.01"
@@ -40,16 +40,16 @@
             </a-entity>
       </a-entity>
       
-      <a-sky color="#eee"></a-sky>
       <a-light type="ambient" color="#445451"></a-light>
-      <a-light type="point" intensity="2" position="2 4 4"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light>-->
+      <a-sky color="#eee"></a-sky>
     </a-scene>
 
-        <script>
+        <!--<script>
         setTimeout(function(){
           var loader = document.getElementById('loader');
           loader.style.visibility="hidden"
         },2000);
-      </script>
+      </script>-->
   </body>
 </html>
