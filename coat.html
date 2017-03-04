@@ -9,7 +9,7 @@
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
   <body>
-    <div id="loader"></div>
+    <!--<div id="loader"></div>-->
     <a-scene>
       <a-assets>
         <a-asset-item id="coat-obj" src="./coat/coat.obj"></a-asset-item>
@@ -34,24 +34,24 @@
                repeat="indefinite"></a-animation>
         </a-entity>
 
-      <a-entity camera="userHeight: 1.6" look-controls>
+      <!--<a-entity camera="userHeight: 1.6" look-controls>
         <a-entity cursor="fuse: true; fuseTimeout: 500"
             position="0 0 -0.5"
             geometry="primitive: ring; radiusInner: 0.005; radiusOuter: 0.01"
             material="color: cyan; shader: flat">
         </a-entity>
       </a-entity>
-      <a-sky color="#eee"></a-sky>
       <a-light type="ambient" color="#445451"></a-light>
-      <a-light type="point" intensity="2" position="2 4 4"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light>-->
+      <a-sky color="#eee"></a-sky>
     </a-scene>
     
 
-      <script>
+      <!--<script>
         setTimeout(function(){
           var loader = document.getElementById('loader');
           loader.style.visibility="hidden"
         },2000);
-      </script>
+      </script>-->
   </body>
 </html>
